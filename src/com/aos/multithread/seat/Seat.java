@@ -5,28 +5,28 @@ import com.aos.multithread.customer.Customer;
 public class Seat {
 	
 	private int seatNumber;
-	private Customer seatTaken;
+	private Customer customerSeat;
 	
 	public Seat(int num)
 	{
 		seatNumber = num;
-		seatTaken = null;
+		customerSeat = null;
 	}
 
 	public void assignSeat(Customer c)
 	{
-		seatTaken = c;
+		customerSeat = c;
 	}
 
 	public boolean isSeatEmpty() {
-		return seatTaken == null;
+		return customerSeat == null;
 	}
 	
 	public int getSeatNumber() {
 		return seatNumber;
 	}
 	
-	public Customer getCustomer(){
-		return seatTaken;
+	public Customer getCustomerSeat(){
+		return customerSeat;
 	}
 }
